@@ -26,3 +26,19 @@ button:hover {
     background-color: rgb(40, 218, 78);
     color:chartreuse
 }
+
+footer {
+    background-color: rgb(10, 202, 55);
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+main section img {
+    border-radius: 5%;
+    max-width: 100%;
+    height: auto;
+}
