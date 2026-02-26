@@ -1,4 +1,28 @@
 body{
-    background-color: darkgray;
+    background-color: whitesmoke;
     color:black
+}
+
+nav a{
+    color: rgb(10, 202, 55);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+section p a{
+    color: rgb(10, 202, 55);
+    text-decoration: none;
+}
+
+button {
+    background-color: rgb(10, 202, 55);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(40, 218, 78);
+    color:chartreuse
 }
