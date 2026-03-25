@@ -15,6 +15,7 @@ nav a{
 section p a{
     color: rgb(10, 202, 55);
     text-decoration: none;
+    font-weight: bold;
 }
 
 button {
@@ -57,4 +58,30 @@ button, input, textarea {
     border-left: 4px solid rgb(10, 202, 55); /* Un detalle estético para resaltar la nota */
     padding-left: 10px;
     margin: 20px 0;
+}
+
+nav ul{
+   display: flex; /* Activa Flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los enlaces pasen a otra línea si la pantalla es pequeña */
+    gap: 30px; /* Crea un espacio exacto entre cada enlace */
+    list-style: none; /* Quita los puntos negros por defecto de la lista */
+    padding: 0;
+    margin: 20px 0;
+}
+
+.galeria-flex {
+    display: flex; /* Activa Flexbox para este contenedor */
+    flex-wrap: wrap; /* Si las fotos no caben, las empuja a la fila de abajo */
+    justify-content: center; /* Centra toda la cuadrícula */
+    gap: 15px; /* Espaciado uniforme entre todas las fotos */
+    margin-top: 20px;
+}
+
+/* Regla para que las imágenes dentro del flexbox se adapten al instante */
+.galeria-flex img {
+    width: 300px; /* Tamaño base de las imágenes */
+    flex-grow: 1; /* Permite que la imagen crezca un poco para llenar espacios vacíos */
+    object-fit: cover; /* Evita que las fotos se deformen o estiren */
+    border-radius: 5%;
 }
