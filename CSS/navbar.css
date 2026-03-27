@@ -1,0 +1,59 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    color: white
+}
+
+header{
+    background-color: #333 !important;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color:green !important;
+    background-color: #333 !important;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white !important;
+    font-size: 18px;
+    transition:0.3s; /*Agrega una transición suave para el cambio de color*/
+}
+
+.nav-links a:hover{
+    color: green !important; /* Cambia el color al pasar el mouse */
+    font-size: 30px; /* Aumenta el tamaño de la fuente al pasar el mouse */
+}
+
+.boton{
+    display: none;
+    flex-direction: column;
+    background-color: green !important;
+    color: white !important;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition:0.3s; /*Agrega una transición suave para el cambio de color*/
+    gap: 5px;
+}
+
+.boton span{
+    width: 25px;
+    height: 3px;
+    background-color: white !important;
+    margin: 4px;
+    transition:0.3s; /*Agrega una transición suave para el cambio de color*/
+}
+
