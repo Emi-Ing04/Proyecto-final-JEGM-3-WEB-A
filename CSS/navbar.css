@@ -3,7 +3,11 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 40px;
-    color: white
+    color: white;
+    position: sticky; 
+    top: 0; /* Le dice que se pegue exactamente a 0 pixeles del techo de la pantalla */
+    z-index: 1000; /* Asegura que la barra flote por encima de las fotos de tu galería y no choque con ellas */
+    background-color: #333; /* Le damos color de fondo para que no se vuelva transparente al bajar */
 }
 
 header{

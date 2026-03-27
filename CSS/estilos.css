@@ -89,3 +89,58 @@ nav ul{
     object-fit: cover; /* Evita que las fotos se deformen o estiren */
     border-radius: 5%;
 }
+
+.btn-flotante {
+    position: fixed; /* Lo ancla a la ventana del navegador */
+    bottom: 60px; /* Lo separa del fondo para que no choque con tu footer fijo */
+    right: 20px; /* Lo mantiene en la esquina inferior derecha */
+    background-color: rgb(8, 140, 38); /* Un verde más oscuro para buen contraste */
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    z-index: 1000; /* Asegura que flote por encima de las fotos y el texto */
+    transition: 0.3s; /* Transición suave para el hover */
+}
+
+.btn-flotante:hover {
+    background-color: rgb(40, 218, 78); /* Verde brillante al pasar el ratón */
+    color: black;
+}
+
+html {
+    scroll-behavior: smooth; /* Hace que el salto hacia arriba sea un deslizamiento suave */
+}
+
+.contenedor-tarjetas {
+    display: flex; /* Activa la cuadrícula flexible */
+    flex-wrap: wrap; /* Permite que las tarjetas bajen de línea si la pantalla es estrecha */
+    justify-content: center; /* Centra las tarjetas en la pantalla */
+    gap: 20px; /* Separación exacta entre cada tarjeta */
+    margin-top: 20px;
+}
+
+.tarjeta {
+    background-color: white;
+    border-top: 5px solid rgb(10, 202, 55); /* Una línea verde en la parte superior para decorar */
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    width: 250px; /* Ancho base de cada tarjeta */
+    flex-grow: 1; /* Permite que se estiren un poco para rellenar espacios */
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Crea un efecto de sombra sutil (profundidad) */
+    text-align: center;
+    transition: 0.3s; /* Transición suave para cuando pasemos el ratón */
+}
+
+/* Efecto interactivo para las tarjetas */
+.tarjeta:hover {
+    transform: translateY(-5px); /* Hace que la tarjeta "salte" un poco hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más grande al saltar */
+}
+
+.tarjeta h3 {
+    color: rgb(8, 140, 38);
+    margin-top: 0;
+}
